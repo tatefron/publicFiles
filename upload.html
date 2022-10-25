@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Upload</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <!-- Favicons -->
+      <link href="assets/img/favico n.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+      <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.14.2/daterangepicker.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top d-flex align-items-center">
+         <div class="container ">
+            <div class="row d-flex pl-4 pr-4 pl-lg-3 pr-lg-3 align-items-center justify-content-lg-between">
+               <div class="col-lg-2 col-5 logo pl-0">
+                  <a href="index.html"><span><img src="assets/img/logo.png"></span></a>
+               </div>
+               <nav class="col-md-8 nav-menu d-none d-lg-flex justify-content-center">
+                  <ul>
+                     <li><a href="./index.html">Home</a></li>
+                     <li><a href="./search-results.html">Search</a></li>
+                     <li class="drop-down" >
+                        <a href="./categories-pages.html">Categories</a>
+                        <ul>
+                           <li><a href="./sub-categories-page.html">Sub-categories</a></li>
+                        </ul>
+                     </li>
+                     <li class="active"><a href="./upload.html" >Upload</a></li>
+                     <li><a href="./download.html">Download</a></li>
+                     <li><a href="./faq.html">Faq</a></li>
+                     <li><a href="./contact.html">Contact Us</a></li>
+                  </ul>
+               </nav>
+               <!-- .nav-menu -->
+               <div class="col-lg-2 col-5 d-flex  justify-content-end align-items-right header-right p-0">
+                  <div class="user-icon"><i class="far fa-user"></i></div>
+                  <!--         <div class="lang-icon d-flex align-items-center"><span>EN</span><img src="assets/img/flag/flag-en.png"></div> -->
+                  <div id="lang_selector" class="language-dropdown">
+                     <label for="toggle" class="lang-flag lang-en" title="Click to select the language">
+                        <span class="flag">
+                           <div id="lang_selected">
+                              <p>EN</p>
+                           </div>
+                        </span>
+                     </label>
+                     <ul class="lang-list">
+                        <li class="lang lang-en selected" title="EN">
+                           <span class="flag" >
+                              <div class="lang-icon d-flex align-items-center"><span>EN</span></div>
+                           </span>
+                        </li>
+                        <li class="lang lang-fr" title="FR">
+                           <span class="flag">
+                              <div class="lang-icon d-flex align-items-center"><span>FR</span></div>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- End Header -->
+      <main id="main">
+         <!-- ======= More Services Section ======= -->
+         <section id="upload-files" class="upload-files">
+            <div class="row m-0">
+               <div class="col-lg-12 p-0">
+                  <div class="container pl-4 pr-4 pl-lg-3 pr-lg-3">
+                     <form method="POST" action="#" enctype="multipart/form-data">
+                        <!-- COMPONENT START -->
+                        <div class="col-12 col-lg-12 m-auto upload-block_top pt-5 pb-5">
+                           <div class="section-title aos-init aos-animate p-0" data-aos="fade-up">
+                              <h1>Upload your file</h1>
+                              <p class="mt-0">You can upload only one file</p>
+                           </div>
+                           <div class="form-group m-auto input-file_block">
+                              <div class="input-group input-file" name="Fichier1">
+                                 <input type="text" class="form-control" placeholder='Choose file' accept=".jpg, .jpeg, .png" />
+                                 <span class="input-group-btn upload-btn file-block_show" id="upload-icon">
+                                    <button class="btn btn-default btn-choose" type="button">
+                                       <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44484 10.958V2.90783L11.9573 5.16823C12.297 5.47385 12.8126 5.47385 13.1523 5.16823C13.5467 4.81335 13.5467 4.1949 13.1523 3.84002L9.16923 0.256584C8.78896 -0.0855279 8.21183 -0.0855283 7.83157 0.256584L3.84852 3.84002C3.45406 4.1949 3.45406 4.81335 3.84852 5.16823C4.18822 5.47385 4.70378 5.47385 5.04348 5.16823L7.55595 2.90783V10.958C7.55595 11.4796 7.97879 11.9025 8.5004 11.9025C9.022 11.9025 9.44484 11.4796 9.44484 10.958ZM17 8.59908C17 8.07748 16.5772 7.65464 16.0556 7.65464C15.534 7.65464 15.1111 8.07748 15.1111 8.59908V15.3018H1.88889V8.59908C1.88889 8.07748 1.46605 7.65464 0.944444 7.65464C0.422842 7.65464 0 8.07748 0 8.59908V15.3018C0 16.2404 0.845684 17.0012 1.88889 17.0012H15.1111C16.1543 17.0012 17 16.2404 17 15.3018V8.59908Z" fill="white"/>
+                                       </svg>
+                                    </button>
+                                 </span>
+                                 <span class="input-group-btn delete-btn">
+                                 <button class="btn btn-warning btn-reset" type="button"><i class="far fa-trash-alt"></i></button>
+                                 </span>
+                              </div>
+                           </div>
+                           <span id="file-error" class="file-error"></span>
+                           <div class="form-group ">
+                              <input type="email" class="form-control m-auto" id="emailInput" placeholder="Enter your email">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-12 col-md-9 col-lg-6 pr-lg-5 ">
+                              <div class="form-group">
+                                 <label for="FormSelect1">Choose the file category</label>
+                                 <select class="form-control" id="FormSelect1">
+                                    <option></option>
+                                    <option value="cat1">Design & Illustrations</option>
+                                    <option>Aménagement urbain</option>
+                                    <option>Architecture</option>
+                                    <option>Architecture du paysage</option>
+                                    <option>Architecture d’intérieur</option>
+                                    <option value="disabled-opt">Bâtiment et Travaux publics</option>
+                                    <option value="disabled-opt">Habitat et logement</option>
+                                    <option value="disabled-opt">Patrimoine architectural</option>
+                                    <option value="cat2">Art & Culture</option>
+                                    <option>Design & Illustrations 2-1</option>
+                                    <option>Design & Illustrations 2-2</option>
+                                    <option>Design & Illustrations 2-3</option>
+                                    <option>Design & Illustrations 2-4</option>
+                                    <option>Design & Illustrations 2-5</option>
+                                    <option>Design & Illustrations 2-6</option>
+                                    <option value="cat3">Design & Illustrations 3</option>
+                                    <option>Design & Illustrations 3-1</option>
+                                    <option>Design & Illustrations 3-2</option>
+                                    <option>Design & Illustrations 3-3</option>
+                                    <option>Design & Illustrations 3-4</option>
+                                 </select>
+                              </div>
+<!--                               <div class="form-group">
+                                 <label for="FormSelect2">Choose the sub-category</label>
+                                 <select class="form-control" id="FormSelect2">
+                                    <option></option>
+                                    <option>Subcategory 1</option>
+                                    <option>Subcategory 2</option>
+                                    <option>Subcategory 3</option>
+                                    <option>Subcategory 4</option>
+                                    <option>Subcategory 5</option>
+                                 </select>
+                              </div> -->
+                              <div class="form-group d-flex flex-row flex-wrap justify-content-between mb-4">
+                                 <label for="FormTextarea1">Meta title</label> <span></span>
+                                 <textarea class="form-control" id="FormTextarea1" rows="1" wrap="soft" minlength="30" maxlength="70"></textarea>
+                              </div>
+                              <div class="form-group d-flex flex-row flex-wrap justify-content-between mb-4">
+                                 <label for="FormTextarea2">Meta description</label> <span></span>
+                                 <textarea class="form-control" id="FormTextarea2" rows="1" minlength="50" maxlength="160" wrap="soft"></textarea>
+                              </div>
+                              <div class="form-group d-flex flex-row flex-wrap justify-content-between mb-4">
+                                 <label for="FormTextarea3">Description</label><span></span>
+                                 <textarea class="form-control" id="FormTextarea3" rows="3" minlength="300" maxlength="600" wrap="soft"></textarea>
+                              </div>
+                           </div>
+                           <div class="col-12 col-md-9 col-lg-6 pl-lg-5 upload-block_right ">
+                              <legend class="col-form-label ">Duration of publication</legend>
+                              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                 <label class="btn btn-primary active">
+                                 <input type="radio" name="options" id="option1" autocomplete="off" checked> Permanent
+                                 </label>
+                                 <label class="btn btn-primary">
+                                 <input type="radio" name="options" id="option2" autocomplete="off"> Temporary
+                                 </label>
+                              </div>
+                              <div class="form-group daterange-block">
+                                 <!--             or https://github.com/sensortower/daterangepicker -->
+                                 <input type="text" name="daterange" value=" " />   
+                              </div>
+                              <div class="form-group d-flex flex-row flex-wrap justify-content-between mt-4 mb-4">
+                                 <label for="FormTextarea4">Public Message</label><span></span>
+                                 <textarea class="form-control" id="FormTextarea4" rows="4" maxlength="200" minlength="20" wrap="soft"></textarea>
+                              </div>
+                              <div class="form-check allow-comments_block">
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="allow-comments" >
+                                    <label class="custom-control-label" for="allow-comments">Allow to leave comments to the file</label>
+                                 </div>
+                              </div>
+                              <div class="form-group mt-4">
+                                 <button type="submit" class="btn btn-primary pull-right">Submit</button> 
+                                 <!--     <button type="reset" class="btn btn-danger" disabled>Reset</button> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!-- COMPONENT END -->
+                     </form>
+                     <button class="btn btn-primary" data-toggle="modal" data-target="#sharing-completed">Thank you for sharing your file!</button>
+                     <button class="btn btn-primary" data-toggle="modal" data-target="#sharing-loading">Your file is publishing</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End More Services Section -->
+      </main>
+      <!-- End #main -->
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="row m-0">
+            <div class="col-lg-12 footer-links-block">
+               <div class="container">
+                  <div class="row d-flex align-items-center">
+                     <div class="col-lg-12 text-center">
+                        <div class="logo mr-auto">
+                           <h2 class="text-light "><a href="index.html"><span><img src="assets/img/logo-footer.png"></span></a></h2>
+                        </div>
+                     </div>
+                     <div class="col-lg-12 ">
+                        <div class="row d-flex justify-content-center">
+                           <nav class="footer-links pt-2 pt-lg-0 d-flex flex-wrap text-md-left text-center">
+                              <a href="#" class="scrollto">Les Conditions Générales d'Utilisation</a>
+                              <a href="./terms.html" class="scrollto">Politique de Confidentialité</a>
+                              <a href="#" class="scrollto">Mentions légales</a>
+                              <a href="#" class="scrollto">Signaler un abus</a>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="social-links d-flex align-items-center justify-content-center">
+                           <span>Follow us   </span>   
+                           <div class="social-link-block">         
+                              <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                              <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-12 text-center copyright-block">
+               <div class="container">
+                  <div class="copyright">
+                     All Rights Reserved (c) 2020
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+      <section class="modal fade show modal-notification" id="sharing-completed" tabindex="-1" role="dialog" aria-labelledby="error-Modal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content col-md-12 col-sm-12 modal-block">
+           <p class="title">Thank you for sharing your file!</p>
+           <p class="message">You’ll receive an email with the results of it’s observing by us</p>
+            <button class="button-pf" data-dismiss="modal">Ok</button>
+         </div>
+       </div>
+     </section>
+      <section class="modal fade show modal-notification" id="sharing-loading" tabindex="-1" role="dialog" aria-labelledby="error-Modal" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content col-md-12 col-sm-12 modal-block">
+           <p class="title">Your file is publishing</p>
+           <div class="loader">Loading...</div>
+         </div>
+       </div>
+     </section>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+      <script src="assets/vendor/counterup/counterup.min.js"></script>
+      <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js" integrity="sha512-mh+AjlD3nxImTUGisMpHXW03gE6F4WdQyvuFRkjecwuWLwD2yCijw4tKA3NsEFpA1C3neiKhGXPSIGSfCYPMlQ==" crossorigin="anonymous"></script> -->
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
